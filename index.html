@@ -10,9 +10,11 @@
 <body>
   <div id="app">
     <ol>
-      <li v-for="comment in comments">
-        {{ comment.content }}
-      </li>
+      <comment
+
+      v-for="comment in comments"
+      v-bind:comment="comment"
+      ></comment>
     </ol>
 
   </div>
