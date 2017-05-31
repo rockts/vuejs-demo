@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=q, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>vue</title>
+  <script src="./vue.js" charset="uft-8"></script>
+</head>
+<body>
+  <div id="app">
+    <div v-if="welcome" v-bind:title="title">
+      {{ message }}
+    </div>
+    <button v-on:click="logMessage">按钮</button>
+    <input v-model="message">
+
+  </div>
+
+
+  <script src="./index.js" charset="uft-8"></script>
+</body>
+</html>
