@@ -1,14 +1,9 @@
-Vue.component('comment', {
-  props: ['comment'],
-  template: '<li>{{ comment.content }}</li>',
-})
-var app = new Vue({
+var dataSource = {
+  imageScr: 'http://img5.imgtn.bdimg.com/it/u=3572345239,2526769178&fm=23&gp=0.jpg',
+  imageWidth: '100%'
+}
+
+var vm = new Vue({
   el: '#app',
-  data: {
-    comments: [
-      { content: 'nice ~'},
-      { content: 'great ~'},
-      { content: 'swesome ~'},
-    ]
-  }
+  data: dataSource,
 })
