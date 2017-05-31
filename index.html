@@ -9,11 +9,11 @@
 </head>
 <body>
   <div id="app">
-    <div v-if="welcome" v-bind:title="title">
-      {{ message }}
-    </div>
-    <button v-on:click="logMessage">按钮</button>
-    <input v-model="message">
+    <ol>
+      <li v-for="comment in comments">
+        {{ comment.content }}
+      </li>
+    </ol>
 
   </div>
 
