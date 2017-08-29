@@ -6,32 +6,12 @@
   <link rel="stylesheet" href="https://unpkg.com/semantic-ui/dist/semantic.css">
   <script src="https://unpkg.com/vue/dist/vue.js" charset="uft-8"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js" charset="uft-8"></script>
-  <style>
-  .ui.item.menu {
-    margin-top: 24px;
-  }
-  .ui.segment {
-    padding: 32px;
-  }
-  </style>
+  <script src="https://unpkg.com/vuex" charset="uft-8"></script>
+
+
 </head>
 <body>
-  <div id="app">
-    <div class="ui container">
-      <div class="ui two item menu">
-        <router-link active-class="active" exact class="item" to="/">首页</router-link>
-        <router-link
-          active-class="active"
-          class="item"
-          :to="{ name: 'events' }">活动</router-link>
-      </div>
-      <div class="ui segment">
-        <router-view></router-view>
-      </div>
-    </div>
-
-
-  </div>
+  <div id="app"></div>
 
 
   <script src="./index.js" charset="uft-8"></script>
