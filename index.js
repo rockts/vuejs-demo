@@ -1,9 +1,3 @@
-var dataSource = {
-  massage: 'hello'
-
-}
-
-var vm = new Vue({
-  el: '#app',
-  data: dataSource,
+const app = new Vue({
+  el: '#app'
 })
