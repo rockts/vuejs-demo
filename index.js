@@ -4,11 +4,25 @@ const Home = {
 
 const Event = {
   props: ['id'],
-  template: '<h2>活动 {{ id }} </h2>',
+  template: `
+    <div>
+      <h2>活动 {{ id }} </h2>
+      <router-view></router-view>
+    </div>
+  `,
   beforeRouteUpdate(to, from, next) {
     console.log(to, from)
     next()
   }
+}
+
+const Comment = {
+  template: `
+    <div>
+      <hr class="ui section divider">
+        <h2>评论</h2>
+    </div>
+  `
 }
 
 const routes = [
@@ -23,7 +37,13 @@ const routes = [
   {
     path: '/events/:id',
     component: Event,
-    props: true
+    props: true,
+    children: [
+      {
+        path: 'comments',
+        component: Comment
+      }
+    ]
   }
 ]
 
